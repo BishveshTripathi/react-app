@@ -13,16 +13,15 @@ const Cards = () => {
   );
 
   return (
-    <div>
+    <div className="container">
       <div>
         <Header handleSearch={(query) => setSearchQuery(query)} />
       </div>
       ;
       <div className="card">
-        {" "}
         {filteredProducts.slice(page * 6 - 6, page * 6).map((data) => {
           return (
-            <div className="car_card">
+            <div className="car_card" key={data.id}>
               <img src={data.image} alt={data.title} />
               <div className="name_model">
                 <span className="span_name">{data.title}</span>

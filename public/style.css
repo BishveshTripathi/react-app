@@ -7,15 +7,18 @@
   font-family: "Montserrat", sans-serif;
   font-family: "Open Sans", sans-serif;
   font-family: "Poppins", sans-serif;
-  /* background-color: #f4eeeec3; */
+}
+body {
+  background-color: aliceblue;
 }
 
 .header {
   height: 60px;
-  width: 93rem;
+  width: 90rem;
   border-radius: 11px;
-  margin-top: 3px;
-  margin-left: 20px;
+  margin-top: 20px;
+  margin-left: 35px;
+  border: 1px solid white;
   background-color: rgb(225, 231, 231);
 }
 .header input {
@@ -26,6 +29,7 @@
   margin: 11px;
   font-size: 16px;
   border: none;
+  outline: none;
 }
 .dropdown {
   margin-left: 23rem;
@@ -41,33 +45,38 @@
 .card {
   display: flex;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
+  grid-gap: 50px;
   flex-wrap: wrap;
-  margin-top: 20px;
-  margin-left: 110px;
+  /* margin-top: 20px; */
+  margin-left: 60px;
   font-weight: bolder;
 }
 .car_card {
-  height: 400px;
-  width: 300px;
+  height: 550px;
+  width: 430px;
   border: 1px solid white;
   background-color: rgb(233, 242, 242);
   border-radius: 8px;
-  margin-left: 110px;
-  margin-top: 30px;
-  margin-bottom: 20px;
+  /* margin-left: 90px; */
+  /* margin-top: 5px; */
+  /* margin-bottom: 20px; */
   box-shadow: 2px 2px 20px #d4d2d2;
 }
 .car_card img {
   border-radius: 18px;
   padding: 10px;
-  height: 210px;
-  width: 300px;
+  height: 320px;
+  width: 430px;
 }
 .name_model {
   padding: 2px 15px;
   display: flex;
   justify-content: space-between;
+  margin: 0 8px;
+}
+.name_model .span_name {
+  font-size: 25px;
+  font-weight: 900;
 }
 .name_model .span_model {
   border-radius: 15px;
@@ -76,9 +85,10 @@
 }
 .card_details {
   display: flex;
-  gap: 5px;
+  gap: 60px;
   padding-left: 10px;
   color: rgb(108, 105, 105);
+  margin: 0 8px;
 }
 .card_details .material-symbols-outlined {
   color: rgb(7, 148, 203);
@@ -121,11 +131,13 @@
 }
 .card_footer {
   display: flex;
+  justify-content: space-between;
+  margin: 17px 18px;
 }
 .card_footer .rents {
-  margin-left: 12px;
+  /* margin-left: 12px; */
   margin-top: 15px;
-  font-size: 12px;
+  font-size: 22px;
 }
 .card_footer .rents strong {
   font-size: 21px;
@@ -155,16 +167,17 @@
   font-size: 14px;
   background-color: rgb(9, 109, 149);
   color: antiquewhite;
+  cursor: pointer;
 }
 .heart_btn {
   cursor: pointer;
 }
 .footer {
   height: 60px;
-  width: 100rem;
+  width: 90rem;
   border-radius: 11px;
-  margin-left: -35px;
-  margin-right: 13px;
+  /* margin-left: -40px; */
+  margin-right: 31px;
   background-color: rgb(210, 219, 219);
   margin-bottom: 15px;
 }
@@ -179,10 +192,11 @@
 .pagination span {
   padding: 5px 11px;
   cursor: pointer;
-  /* background-color: azure; */
-  box-shadow: 10px 10px 30px rgb(34, 33, 33);
+  border: 1px solid white;
+  box-shadow: 1px 3px 3px 0px rgb(31, 31, 31);
   border-radius: 8px;
   color: rgb(28, 28, 27);
+  opacity: 8px;
 }
 
 .pagination__disable {
