@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 
-const header = () => {
+const Header = ({ handleSearch }) => {
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const handleChange = (e) => {
+    const value = e.target.value;
+    setSearchQuery(value);
+    handleSearch(value);
+  };
+
   return (
     <div className="header">
       <form>
-        <input type="text" placeholder="Search..."></input>
+        <input
+          type="text"
+          placeholder="Search..."
+          value={searchQuery}
+          onChange={handleChange}
+        ></input>
       </form>
       <div className="dropdown">
         <h3>Relevance</h3>
@@ -15,5 +28,4 @@ const header = () => {
     </div>
   );
 };
-
-export default header;
+export default Header;
