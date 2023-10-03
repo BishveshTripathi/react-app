@@ -7,6 +7,7 @@
   font-family: "Montserrat", sans-serif;
   font-family: "Open Sans", sans-serif;
   font-family: "Poppins", sans-serif;
+  /* background-color: #f4eeeec3; */
 }
 
 .header {
@@ -36,4 +37,158 @@
 .dropdown span {
   margin-left: -58px;
   margin-top: 4px;
+}
+.card {
+  display: flex;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-left: 110px;
+  font-weight: bolder;
+}
+.car_card {
+  height: 400px;
+  width: 300px;
+  border: 1px solid white;
+  background-color: rgb(233, 242, 242);
+  border-radius: 8px;
+  margin-left: 110px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 20px #d4d2d2;
+}
+.car_card img {
+  border-radius: 18px;
+  padding: 10px;
+  height: 210px;
+  width: 300px;
+}
+.name_model {
+  padding: 2px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.name_model .span_model {
+  border-radius: 15px;
+  border: 1px dotted blue;
+  padding: 3px 8px;
+}
+.card_details {
+  display: flex;
+  gap: 5px;
+  padding-left: 10px;
+  color: rgb(108, 105, 105);
+}
+.card_details .material-symbols-outlined {
+  color: rgb(7, 148, 203);
+}
+.section_1 {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.section_2 {
+  padding-left: 40px;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.section_3 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.section_4 {
+  padding-left: 20px;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.car_details {
+  margin-top: 8px;
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  font-size: 12px;
+}
+.line hr {
+  margin-left: 13px;
+  margin-right: 18px;
+  margin-top: 10px;
+  border-top: 1.5px solid rgb(220, 212, 212);
+}
+.card_footer {
+  display: flex;
+}
+.card_footer .rents {
+  margin-left: 12px;
+  margin-top: 15px;
+  font-size: 12px;
+}
+.card_footer .rents strong {
+  font-size: 21px;
+  font-weight: bolder;
+}
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+  margin-left: 40px;
+}
+.buttons .heart_btn {
+  height: 34px;
+  width: 34px;
+  padding-top: 5px;
+  padding-left: 5px;
+  border-radius: 8px;
+  background-color: rgb(210, 226, 233);
+  color: rgb(101, 172, 200);
+}
+.buttons .rent_btn {
+  height: 34px;
+  width: 84px;
+  padding-top: 6px;
+  padding-left: 9px;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: rgb(9, 109, 149);
+  color: antiquewhite;
+}
+.heart_btn {
+  cursor: pointer;
+}
+.footer {
+  height: 60px;
+  width: 100rem;
+  border-radius: 11px;
+  margin-left: -35px;
+  margin-right: 13px;
+  background-color: rgb(210, 219, 219);
+  margin-bottom: 15px;
+}
+.pagination {
+  margin: 15px 0;
+  display: flex;
+  margin-right: 15px;
+  gap: 5px;
+  justify-content: flex-end;
+}
+
+.pagination span {
+  padding: 5px 11px;
+  cursor: pointer;
+  /* background-color: azure; */
+  /* box-shadow: 10px 10px 30px rgb(34, 33, 33); */
+  border-radius: 8px;
+  color: rgb(28, 28, 27);
+}
+
+.pagination__disable {
+  opacity: 0;
+}
+
+.pagination__selected {
+  background-color: rgb(8, 165, 150);
 }
